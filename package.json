@@ -1,0 +1,24 @@
+{
+  "name": "dsh-error-brief",
+  "version": "0.1.0",
+  "description": "Show the real upstream error instead of the generic 'API key is invalid' label in DeepSeek Harness.",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    },
+    "manifestVersion": 1
+  },
+  "license": "MIT"
+}
