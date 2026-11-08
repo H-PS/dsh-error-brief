@@ -1,0 +1,12 @@
+# dsh-error-brief
+#
+# Inserts one host-half loader row. The browser half is declared by
+# `dsh.client` in package.json (exports "./client").
+# No core plugin is replaced, no config of any existing entry is touched.
+- insert:
+    - id: dsh-error-brief
+      name: 'dsh-error-brief'
+      config:
+        maxErrors: 20
+        replaceLabel: true
+        pollMs: 3000
